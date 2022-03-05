@@ -1,17 +1,36 @@
 import React from 'react'
+import Masonry from 'react-masonry-css'
 
 import '../style/CardList.scss'
+import Card from './Card'
+
+import { meta } from '../data/imageMeta'
 
 
 const CardList = () => {
+
+  const breakpointColumnsObj = {
+    default: 4,
+    1100: 3,
+    700: 2,
+    500: 1
+  };
+
   return (
     <>
-    <div className="card-list">
-      <span className="item">Item1</span>
-      <span className="item">Item2</span>
-      <span className="item">Item3</span>
-      <span className="item">Item4</span>
-    </div>
+    <Masonry
+      breakpointCols={breakpointColumnsObj}
+      className="card-list"
+      columnClassName="card-column">
+      
+      {
+        meta.map( m => {
+          return <Card key={m.ChallengeNumber} imageNumber={m.ChallengeNumber} title={m.Title}/>
+        })
+      }
+      
+    </Masonry>
+    
     </>
   )
 }
