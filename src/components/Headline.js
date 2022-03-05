@@ -11,7 +11,10 @@ const Headline = () => {
       </h1>
       <div className="description">
         <p>
-          This page is the last homework assignment for the GPD React Study.
+          Daily UI Challenge는 매일 하나의 디자인 요구사항을 받아 총 100회 수행하는 챌린지입니다.          
+        </p>
+        <p>
+          일정을 완벽하게 지키진 못했지만 꾸준히해서 100회를 달성한 것에 큰 의미가 있었습니다.
         </p>
       </div>
     </div>

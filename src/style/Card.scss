@@ -1,0 +1,28 @@
+@import './global';
+
+.card {
+  border-radius: 10px;
+  margin-bottom: 30px;
+  background: $color--white;
+  box-shadow: 0 4px 10px #83838e;
+  .image {
+    margin: 0 0 10px 0;
+    img {
+      border-radius: 10px 10px 0 0;
+      width: 100%;
+    }
+  }
+
+  .description {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
+    span {
+      padding: 0 0 20px 0;
+      &.title {
+        font-weight: 700;
+        font-size: 14px;
+      }
+    }
+  }
+}
