@@ -1,0 +1,15 @@
+@import './global';
+
+footer {
+  padding: 50px;
+  text-align: center;
+  
+  div {
+    color: $color--gray;
+    font-weight: 500;
+    font-size: 14px;
+    .name {
+      color: $color--secondary;
+    }
+  }
+}

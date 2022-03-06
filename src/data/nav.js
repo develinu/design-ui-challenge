@@ -1,4 +1,4 @@
-export const githubRepository = "https://github.com/develinu/movie-discovery"
+export const githubRepository = "https://github.com/develinu/design-ui-challenge"
 
 export const menus = [
   // {

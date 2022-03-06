@@ -6,10 +6,10 @@ import '../style/Logo.scss'
 
 const Logo = () => {
   return (
-    <Link to="/" className="noselect">
+    <div className='logo noselect'>
       <span className="primary">Daily</span> 
       <span className="secondary">UI</span>
-    </Link>
+    </div>
   )
 }
 

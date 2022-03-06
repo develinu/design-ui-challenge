@@ -10,12 +10,16 @@
     }      
     span {
       &.primary {
-        color: $color--primary;
+        color: $color--secondary;
       }
     }
   }
   .description {
     margin: 30px 0;
-    color: $color--black;
+    color: $color--gray;
+
+    p {
+      margin: 5px 0;
+    }
   }
 }  

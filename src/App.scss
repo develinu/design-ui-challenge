@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.image-popup-enter {
+  opacity: 0;
+}
+
+.image-popup-enter-active {
+  opacity: 1;
+  transition: all 500ms;
+}
