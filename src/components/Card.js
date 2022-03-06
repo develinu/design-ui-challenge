@@ -1,6 +1,7 @@
 import React from 'react'
 
 import '../style/Card.scss'
+import { Link } from 'react-router-dom'
 
 
 const Card = ({ imageNumber, title }) => {
@@ -17,9 +18,11 @@ const Card = ({ imageNumber, title }) => {
     <>
     <div className='card'>
       <div className="image">
-        <img 
-          src={convertToImageName(imageNumber)} 
-          alt="loading" />
+        <Link to={`/image/${imageNumber}`}>
+          <img 
+            src={convertToImageName(imageNumber)} 
+            alt="loading" />
+        </Link>
       </div>
       <div className='description'>
         <span className='title'>#{convertToImageNumber(imageNumber)} {title} </span>
